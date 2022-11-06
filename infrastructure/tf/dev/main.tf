@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-data "digitalocean_project" "dataops-project" {
-  name = "dataops-prototype"
-}
-
 variable "do_token" {}
 variable "pvt_key" {}
 
