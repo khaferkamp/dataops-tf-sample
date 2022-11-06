@@ -1,7 +1,7 @@
-resource "digitalocean_project" "dataops-thesis-project" {
-  name = data.digitalocean_project.dataops-project.name
+resource "digitalocean_project" "dataops_thesis" {
+  name = data.digitalocean_project.dataops_project.name
 }
 
-data "digitalocean_project" "dataops-project" {
+data "digitalocean_project" "dataops_project" {
   name = var.project
 }
