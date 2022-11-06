@@ -1,18 +1,12 @@
 resource "digitalocean_kubernetes_cluster" "dev" {
-  name   = "dok-cluster-dev"
-  region = "fra1"
+  name   = "${var.name}-${var.env}"
+  region = var.region
   # Grab the latest version slug from `doctl kubernetes options versions`
-  version = "1.24.4-do.0"
+  version = var.version
 
   node_pool {
     name       = "worker-pool"
     size       = "s-2vcpu-2gb"
     node_count = 1
-
-    #taint {
-    #  key    = "workloadKind"
-    #  value  = "database"
-    #  effect = "NoSchedule"
-    #}
   }
 }
