@@ -1,5 +1,5 @@
 resource "digitalocean_project_resources" "project" {
-  project = data.digitalocean_project.dataops_project.id
+  project = data.digitalocean_project.dataops.id
   resources = [
     digitalocean_kubernetes_cluster.dev.urn
   ]

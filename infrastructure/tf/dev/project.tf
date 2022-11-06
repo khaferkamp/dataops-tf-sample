@@ -1,3 +1,3 @@
-data "digitalocean_project" "dataops_project" {
+data "digitalocean_project" "dataops" {
   name = var.project
 }
