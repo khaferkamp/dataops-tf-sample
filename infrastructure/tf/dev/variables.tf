@@ -4,33 +4,33 @@
 #                             #
 ###############################
 varible "project" {
-  type = string
+  type        = string
   description = "Name of Project"
 }
 
 variable "name" {
-  type = string
+  type        = string
   description = "Name of Clusters"
 }
 
 variable "domain" {
   type        = string
   default     = "kevinhaferkamp.cloud"
-  description = "The name of the default domain"  
+  description = "The name of the default domain"
 }
 
 variable "do_token" {
-  type = string
+  type        = string
   description = "Digital Ocean Token"
 }
 
 variable "region" {
-  type = string
+  type        = string
   description = "Region of Cluster"
 }
 
 variable "version" {
-  type = string
+  type        = string
   description = "Version of Cluster"
 }
 
@@ -41,11 +41,11 @@ variable "version" {
 ###############################
 
 variable "env" {
-  type = string
+  type        = string
   description = "Name of Environment"
 }
 
 variable "ssh_key_name" {
-  type = string
+  type        = string
   description = "Name of SSH Key"
 }
