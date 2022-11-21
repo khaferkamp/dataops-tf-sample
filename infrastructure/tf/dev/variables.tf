@@ -1,5 +1,10 @@
-variable "environment" {
+variable "domain" {
   type        = string
-  default     = "dev"
-  description = "The name of an environment"
+  default     = "kevinhaferkamp.cloud"
+  description = "The name of the default domain"  
+}
+
+variable "do_token" {
+  type = string
+  description = "Digital Ocean Token"
 }
