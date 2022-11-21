@@ -1,3 +1,18 @@
+###############################
+#                             #
+#         COMMON VARS         #
+#                             #
+###############################
+varible "project" {
+  type = string
+  description = "Name of Project"
+}
+
+variable "name" {
+  type = string
+  description = "Name of Clusters"
+}
+
 variable "domain" {
   type        = string
   default     = "kevinhaferkamp.cloud"
@@ -7,4 +22,30 @@ variable "domain" {
 variable "do_token" {
   type = string
   description = "Digital Ocean Token"
+}
+
+variable "region" {
+  type = string
+  description = "Region of Cluster"
+}
+
+variable "version" {
+  type = string
+  description = "Version of Cluster"
+}
+
+###############################
+#                             #
+#           ENV VARS          #
+#                             #
+###############################
+
+variable "env" {
+  type = string
+  description = "Name of Environment"
+}
+
+variable "ssh_key_name" {
+  type = string
+  description = "Name of SSH Key"
 }
