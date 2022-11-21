@@ -1,4 +1,4 @@
-resource "digitalocean_kubernetes_cluster" "dev" {
+resource "digitalocean_kubernetes_cluster" "dataops" {
   name   = "${var.name}-${var.env}"
   region = var.region
   # Grab the latest version slug from `doctl kubernetes options versions`
