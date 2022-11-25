@@ -3,7 +3,7 @@
 #         COMMON VARS         #
 #                             #
 ###############################
-varible "project" {
+variable "project" {
   type        = string
   description = "Name of Project"
 }
@@ -24,16 +24,6 @@ variable "do_token" {
   description = "Digital Ocean Token"
 }
 
-variable "region" {
-  type        = string
-  description = "Region of Cluster"
-}
-
-variable "version" {
-  type        = string
-  description = "Version of Cluster"
-}
-
 ###############################
 #                             #
 #           ENV VARS          #
@@ -48,4 +38,14 @@ variable "env" {
 variable "ssh_key_name" {
   type        = string
   description = "Name of SSH Key"
+}
+
+variable "region" {
+  type        = string
+  description = "Region of Cluster"
+}
+
+variable "cluster_version" {
+  type        = string
+  description = "Version of Cluster"
 }
